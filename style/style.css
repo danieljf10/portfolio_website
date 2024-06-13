@@ -1,0 +1,308 @@
+/* Reset and base styling */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: rgb(3, 19, 41);
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: rgb(8, 8, 8);
+    font-family: impact, fantasy;
+    z-index: 10;
+}
+
+#logo {
+    width: 6rem;
+    margin: 0.2rem;
+    display: flex;
+}
+
+/* Dropdown navigation styling */
+.drop-navigation {
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    color: white;
+    background-color: transparent;
+}
+
+#drop-navigation-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.dropdown-navlinks > a {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.active a {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 2rem;
+    border-right: 2px solid rgb(175, 175, 175);
+}
+
+.dropdown-menu > a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(176, 175, 175);
+}
+
+/* Homepage container styling */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 5vw;
+    background-image: radial-gradient(circle, #0f294c, #0b2343, #081e3a, #051931, #031329);
+    box-sizing: border-box;
+}
+
+.homepage-container > h1 {
+    margin: 0.5rem 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: white;
+}
+
+.homepage-container > h2 {
+    margin: 0.5rem 0;
+    padding: 0 5vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(185, 185, 185);
+}
+
+/* About container styling */
+.about-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 16, 16);
+}
+
+/* Section banner styling */
+.section-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: ExtraBold;
+    font-size: 1rem;
+    color: white;
+}
+
+a > .active {
+    text-decoration: underline;
+    color: purple;
+}
+
+/* Content card styling */
+.content-card {
+    margin: 1rem;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content-card-header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 1.5rem;
+}
+
+.content-card-content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* Software Development container styling */
+.softwareDev-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 16, 16);
+}
+
+.softwareDev-container > .content-card {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.language-icon {
+    width: 2.8rem;
+}
+
+/* Project card styling */
+.project-card {
+    position: relative;
+    width: 12rem;
+    height: 14rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: linear-gradient(#fff2, transparent);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 2px gray;
+    transition: 0.5s;
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.project-card:hover {
+    transform: rotate(3deg);
+    border: 1px solid gray;
+}
+
+.project-card-header {
+    position: absolute;
+    top: 1rem;
+    color: white;
+}
+
+.project-card-footer {
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+}
+
+.devicon-java-plain,
+.devicon-react-original,
+.devicon-html5-plain {
+    font-size: 5rem;
+    color: white;
+}
+
+/* Extra info button styling */
+.extra-info {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Popup cover styling */
+.popup-cover {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    width: 70%;
+    height: auto;
+    background: linear-gradient(rgba(22, 22, 22, 0.9), rgb(22, 22, 22));
+    backdrop-filter: blur(0.1rem);
+    border: 1px solid rgba(255, 255, 255, 0.128);
+    padding: 1rem;
+}
+
+#exit-button {
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    width: 3.5rem;
+}
+
+#popup-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 1.5rem;
+    color: rgb(210, 210, 210);
+}
+
+#popup-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: rgb(210, 210, 210);
+}
+
+#popup-tags {
+    color: gray;
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#project-link-area {
+   display: flex;
+   justify-content: center;
+   font-family: monospace;
+   padding: 1rem;
+}
+
+#project-link {
+    color: gray;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
